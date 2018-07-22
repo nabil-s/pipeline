@@ -7,6 +7,10 @@ node {
         echo "Environment Path: {env.PATH}"
     }
 
+    stage('Checkout') {
+        checkout scm
+    }
+
     stage('Build') {
         echo 'Building....'
     }
